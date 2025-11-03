@@ -35,9 +35,13 @@
   <script>
      if ('serviceWorker' in navigator) {
        window.addEventListener('flutter-first-frame', function () {
-         navigator.serviceWorker.register('flutter_service_worker.js?v=638398328');
+         navigator.serviceWorker.register('flutter_service_worker.js?v=2687644156');
        });
      }
+  </script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/pdf.js/2.7.570/pdf.min.js"></script>
+  <script type="text/javascript">
+      pdfjsLib.GlobalWorkerOptions.workerSrc = "//cdnjs.cloudflare.com/ajax/libs/pdf.js/2.7.570/pdf.worker.min.js";
   </script>
   <script defer="" src="main.dart.js" type="application/javascript"></script>
   <style id="splash-screen-style">

@@ -28,14 +28,14 @@
   <!-- Favicon -->
   <link rel="icon" type="image/png" href="favicon/png">
 
-  <title>ABCS-TSG</title>
+  <title>HRMS TSG</title>
   <link rel="manifest" href="manifest.json">
   <meta name="msapplication-TileColor" content="#6200EA">
   <meta name="msapplication-TileImage" content="icons/ms-icon-144x144.png">
   <script>
      if ('serviceWorker' in navigator) {
        window.addEventListener('flutter-first-frame', function () {
-         navigator.serviceWorker.register('flutter_service_worker.js?v=3540559553');
+         navigator.serviceWorker.register('flutter_service_worker.js?v=1842558725');
        });
      }
   </script>
@@ -44,6 +44,9 @@
       pdfjsLib.GlobalWorkerOptions.workerSrc = "//cdnjs.cloudflare.com/ajax/libs/pdf.js/2.7.570/pdf.worker.min.js";
   </script>
   <script defer="" src="main.dart.js" type="application/javascript"></script>
+  
+  
+  <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport">
   <style id="splash-screen-style">
     html {
       height: 100%
@@ -109,7 +112,6 @@
       document.body.style.background = "transparent";
     }
   </script>
-  <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport">
 </head>
 <body>
   <picture id="splash">
@@ -117,6 +119,7 @@
       <source srcset="splash/img/dark-1x.png 1x, splash/img/dark-2x.png 2x, splash/img/dark-3x.png 3x, splash/img/dark-4x.png 4x" media="(prefers-color-scheme: dark)">
       <img class="center" aria-hidden="true" src="splash/img/light-1x.png" alt="">
   </picture>
+  
   <script src="flutter_bootstrap.js" async=""></script>
 
 

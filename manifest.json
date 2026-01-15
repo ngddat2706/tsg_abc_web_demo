@@ -1,11 +1,11 @@
 {
-    "name": "abcs_dssg_flutter_web_app!",
-    "short_name": "abcs_dssg",
-    "start_url": ".",
+    "name": "TSG HRM Web App",
+    "short_name": "TSG HRM",
+    "start_url": "/",
     "display": "standalone",
     "background_color": "#0175C2",
     "theme_color": "#0175C2",
-    "description": "A new Flutter project!.",
+    "description": "Ứng dụng quản lý nhân sự, tiền lương và kế hoạch vật tư TSG",
     "orientation": "portrait-primary",
     "prefer_related_applications": false,
      "icons": [

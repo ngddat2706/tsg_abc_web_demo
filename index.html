@@ -1,14 +1,15 @@
 <!DOCTYPE html><html><head>
   <!-- <base href="/"> -->
-  <base href="https://ngddat2706.github.io/tsg_abc_web_demo/">
+  <!-- <base href="https://ngddat2706.github.io/tsg_abc_web_demo/"> -->
+  <base href="/" />
 
   <meta charset="UTF-8">
   <meta content="IE=Edge" http-equiv="X-UA-Compatible">
-  <meta name="description" content="A new Flutter project!">
-  <meta name="keywords" content="ABC Solutions, TSG, DSSG">
+  <meta name="description" content="Ứng dụng quản lý nhân sự, tiền lương và kế hoạch vật tư TSG">
+  <meta name="keywords" content="ABC Solutions, TSG, DSSG, HRM">
   <meta name="author" content="ABC Solutions">
   <meta name="theme-color" content="#6200EA">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
 
   <!-- iOS meta tags & icons -->
   <link rel="apple-touch-icon" sizes="57x57" href="icons/apple-icon-57x57.png">
@@ -20,33 +21,42 @@
   <link rel="apple-touch-icon" sizes="144x144" href="icons/apple-icon-144x144.png">
   <link rel="apple-touch-icon" sizes="152x152" href="icons/apple-icon-152x152.png">
   <link rel="apple-touch-icon" sizes="180x180" href="icons/apple-icon-180x180.png">
+
+  <!-- Android / favicon -->
   <link rel="icon" type="image/png" sizes="192x192" href="icons/android-icon-192x192.png">
   <link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="96x96" href="icons/favicon-96x96.png">
   <link rel="icon" type="image/png" sizes="16x16" href="icons/favicon-16x16.png">
 
   <!-- Favicon -->
-  <link rel="icon" type="image/png" href="favicon/png">
+  <link rel="icon" type="image/png" href="favicon.png">
 
   <title>HRMS TSG</title>
   <link rel="manifest" href="manifest.json">
+
   <meta name="msapplication-TileColor" content="#6200EA">
   <meta name="msapplication-TileImage" content="icons/ms-icon-144x144.png">
-  <script>
+
+  <!-- Service worker -->
+  <!-- <script>
      if ('serviceWorker' in navigator) {
        window.addEventListener('flutter-first-frame', function () {
-         navigator.serviceWorker.register('flutter_service_worker.js?v=2627639976');
+         navigator.serviceWorker.register('flutter_service_worker.js?v=2235414338');
        });
      }
-  </script>
+  </script> -->
+
+  <!-- PDF.js -->
   <script src="//cdnjs.cloudflare.com/ajax/libs/pdf.js/2.7.570/pdf.min.js"></script>
   <script type="text/javascript">
       pdfjsLib.GlobalWorkerOptions.workerSrc = "//cdnjs.cloudflare.com/ajax/libs/pdf.js/2.7.570/pdf.worker.min.js";
   </script>
+
+  <!-- Flutter -->
   <script defer="" src="main.dart.js" type="application/javascript"></script>
   
   
-  <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport">
+  <!-- <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport"> -->
   <style id="splash-screen-style">
     html {
       height: 100%
@@ -56,7 +66,7 @@
       margin: 0;
       min-height: 100%;
       background-color: #ffffff;
-          background-size: 100% 100%;
+      background-size: 100% 100%;
     }
 
     .center {

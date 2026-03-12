@@ -2,7 +2,6 @@
 <head>
   <base href="/tsg_abc_web_demo/">
   <!-- <base href="https://ngddat2706.github.io/tsg_abc_web_demo/"> -->
-   <!-- flutter build web --base-href /tsg_abc_web_demo/ -->
 
   <meta charset="UTF-8">
   <meta content="IE=Edge" http-equiv="X-UA-Compatible">
@@ -21,7 +20,8 @@
   <link rel="manifest" href="manifest.json">
 
   <script>
-    var serviceWorkerVersion = ""873937833"";
+    // The value below is injected by flutter build, do not touch.
+    const serviceWorkerVersion = "1199218391";
   </script>
   <!-- This script adds the flutter initialization JS code -->
   <script src="flutter.js" defer=""></script>
@@ -114,9 +114,14 @@
     <script>
       window.addEventListener('load', function(ev) {
         // Download main.dart.js
-        _flutter.loader.load({
+        _flutter.loader.loadEntrypoint({
           serviceWorker: {
             serviceWorkerVersion: serviceWorkerVersion,
+          },
+          onEntrypointLoaded: function(engineInitializer) {
+            engineInitializer.initializeEngine().then(function(appRunner) {
+              appRunner.runApp();
+            });
           }
         });
       });
